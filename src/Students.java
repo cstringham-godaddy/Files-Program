@@ -91,6 +91,17 @@ public class Students
         
     }
     
+    public void betterThanAverageGPA()
+    {
+        double avg = this.avgGpa();
+
+        for (int x = 0; x < count; x++)
+        {
+            if (students[x].getGpa() > avg)
+                System.out.println(students[x].toString());
+        }
+    }
+    
     public void avgGpa()
     {
     	double avg = 0;
